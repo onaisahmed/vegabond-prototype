@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Fighting Game - Prototype</title>
+</head>
+<body>
+    <h1>Vegabond</h1>
+    <div class="main">
+    <div  style="position: relative; display: inline;">
+        <div class="HealthBar">
+            <!-- Player Health -->
+            <div class="pHealthBar" style="position: relative; width: 100%; display: flex; justify-content: flex-end;">
+                <div class="pbg" style="background-color: #880808; height: 30px; width: 100%;"><p>Miyamoto Musashi</p></div>
+                <div class="pHealth" style="position: absolute; background: -webkit-linear-gradient(left, #ffaa00, #ff8500); top: 0; bottom: 0; right: 0; width: 100%;"></div>
+            </div>
+            <!-- Timer -->
+            <div class="timer">10</div>
+            <!-- Enemy Health -->
+            <div class="eHealthBar" style="position: relative;width: 100%; display: flex; justify-content: flex-end;">
+                <div class="ebg" style="background-color: #880808; height: 30px; width: 100%;"><p>Kojiro Sasaki</p></div>
+                <div class="eHealth" style="position: absolute; background: -webkit-linear-gradient(right, #ffaa00, #ff8500); top: 0; bottom: 0; right: 0; left: 0;"></div>
+            </div>
+        </div>
+        <div>
+            <p class="result" style=" position: absolute;
+            color: white;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;">Result</p>
+        </div>
+        <canvas></canvas>
+    </div>
+</div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/classes.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
